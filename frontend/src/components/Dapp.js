@@ -99,7 +99,11 @@ export default function Dapp() {
             }
             console.log(provider);
             signer = await provider.getSigner();
+<<<<<<< HEAD
             walletAddress = signer.getAddress();
+=======
+            const walletAddress = await signer.getAddress();
+>>>>>>> parent of 986be4d (Change the connected button label to address)
             console.log("Wallet address ", walletAddress);
         }
     }
